@@ -1,0 +1,67 @@
+{
+  "cache_type": "audit-scores",
+  "analyzed_at": "2026-08-20T07:19:49Z",
+  "domain": "measurespark.com",
+  "business_type": "generic website",
+  "industry": "general business",
+  "overall_score": 54,
+  "category_scores": {
+    "technical": 79,
+    "content": 11,
+    "on_page": 95,
+    "schema": 41,
+    "performance": 35,
+    "geo": 23,
+    "images": 100
+  },
+  "priority_issues": [
+    {
+      "severity": "critical",
+      "issue": "Content: Author or expert attribution signals are limited or absent in the visible content."
+    },
+    {
+      "severity": "critical",
+      "issue": "Content: No external citations were detected in the visible HTML."
+    },
+    {
+      "severity": "critical",
+      "issue": "Content: The page has limited answer-first formatting such as lists or tables."
+    },
+    {
+      "severity": "critical",
+      "issue": "Content: Word count (329) is below the recommended floor for a homepage (500)."
+    },
+    {
+      "severity": "critical",
+      "issue": "Geo: Author/date attribution is weak in the visible content."
+    },
+    {
+      "severity": "critical",
+      "issue": "Geo: No llms.txt file was detected."
+    },
+    {
+      "severity": "critical",
+      "issue": "Geo: No strong 134-167 word self-contained answer block was detected."
+    },
+    {
+      "severity": "critical",
+      "issue": "Geo: Server-rendered content confirmation is weak without technical-cache support."
+    },
+    {
+      "severity": "critical",
+      "issue": "Geo: The page has limited question-based heading structure for AI extraction patterns."
+    },
+    {
+      "severity": "critical",
+      "issue": "Performance: INP is above target at 348ms."
+    },
+    {
+      "severity": "critical",
+      "issue": "Performance: LCP is above target at 2.68s."
+    },
+    {
+      "severity": "critical",
+      "issue": "Performance: Real-user/PageSpeed performance data was unavailable, so the report uses deterministic lab heuristics."
+    }
+  ]
+}

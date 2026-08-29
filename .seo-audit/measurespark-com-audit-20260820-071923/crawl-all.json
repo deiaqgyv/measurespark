@@ -1,0 +1,130 @@
+{
+  "pages": [
+    {
+      "url": "https://measurespark.com/",
+      "status": 200,
+      "title_length": 55,
+      "meta_description_length": 81
+    },
+    {
+      "url": "https://measurespark.com/categories/screen-measurement-tools",
+      "status": 200,
+      "title_length": 39,
+      "meta_description_length": 91
+    },
+    {
+      "url": "https://measurespark.com/categories/home-project-calculators",
+      "status": 200,
+      "title_length": 48,
+      "meta_description_length": 97
+    },
+    {
+      "url": "https://measurespark.com/categories/measurement-conversion-calculators",
+      "status": 200,
+      "title_length": 49,
+      "meta_description_length": 92
+    },
+    {
+      "url": "https://measurespark.com/tools/online-ruler",
+      "status": 200,
+      "title_length": 39,
+      "meta_description_length": 88
+    },
+    {
+      "url": "https://measurespark.com/tools/screen-ppi-calculator",
+      "status": 200,
+      "title_length": 36,
+      "meta_description_length": 65
+    },
+    {
+      "url": "https://measurespark.com/tools/pixels-to-inches",
+      "status": 200,
+      "title_length": 42,
+      "meta_description_length": 52
+    },
+    {
+      "url": "https://measurespark.com/tools/screen-size-calculator",
+      "status": 200,
+      "title_length": 37,
+      "meta_description_length": 54
+    },
+    {
+      "url": "https://measurespark.com/tools/concrete-calculator",
+      "status": 200,
+      "title_length": 34,
+      "meta_description_length": 56
+    },
+    {
+      "url": "https://measurespark.com/tools/gravel-calculator",
+      "status": 200,
+      "title_length": 32,
+      "meta_description_length": 60
+    },
+    {
+      "url": "https://measurespark.com/tools/mulch-calculator",
+      "status": 200,
+      "title_length": 31,
+      "meta_description_length": 47
+    },
+    {
+      "url": "https://measurespark.com/tools/tile-calculator",
+      "status": 200,
+      "title_length": 30,
+      "meta_description_length": 59
+    },
+    {
+      "url": "https://measurespark.com/tools/flooring-calculator",
+      "status": 200,
+      "title_length": 34,
+      "meta_description_length": 45
+    },
+    {
+      "url": "https://measurespark.com/tools/paint-calculator",
+      "status": 200,
+      "title_length": 31,
+      "meta_description_length": 54
+    },
+    {
+      "url": "https://measurespark.com/tools/wallpaper-calculator",
+      "status": 200,
+      "title_length": 35,
+      "meta_description_length": 46
+    },
+    {
+      "url": "https://measurespark.com/tools/decking-calculator",
+      "status": 200,
+      "title_length": 33,
+      "meta_description_length": 59
+    },
+    {
+      "url": "https://measurespark.com/tools/fence-calculator",
+      "status": 200,
+      "title_length": 31,
+      "meta_description_length": 48
+    },
+    {
+      "url": "https://measurespark.com/tools/area-calculator",
+      "status": 200,
+      "title_length": 40,
+      "meta_description_length": 44
+    },
+    {
+      "url": "https://measurespark.com/tools/volume-calculator",
+      "status": 200,
+      "title_length": 44,
+      "meta_description_length": 52
+    },
+    {
+      "url": "https://measurespark.com/about",
+      "status": 200,
+      "title_length": 33,
+      "meta_description_length": 91
+    },
+    {
+      "url": "https://measurespark.com/privacy",
+      "status": 200,
+      "title_length": 29,
+      "meta_description_length": 81
+    }
+  ]
+}

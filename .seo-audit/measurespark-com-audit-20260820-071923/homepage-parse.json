@@ -1,0 +1,183 @@
+{
+  "title": "MeasureSpark | Measurement and Home Project Calculators",
+  "meta_description": "Free, practical measurement tools and home project calculators for everyday jobs.",
+  "meta_robots": "index, follow",
+  "canonical": "https://measurespark.com",
+  "h1": [
+    "Measure the job. Plan it right."
+  ],
+  "h2": [
+    "Choose the job in front of you",
+    "Screen & ruler",
+    "Home projects",
+    "Conversions",
+    "Your measurements stay on your device."
+  ],
+  "h3": [],
+  "images": [],
+  "links": {
+    "internal": [
+      {
+        "href": "https://measurespark.com/",
+        "text": "\u2194 MeasureSpark",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/screen-measurement-tools",
+        "text": "Screen & ruler",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/home-project-calculators",
+        "text": "Home projects",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/measurement-conversion-calculators",
+        "text": "Conversions",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/online-ruler",
+        "text": "Open the online ruler",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/online-ruler",
+        "text": "Online ruler Calibrate your screen and use a real-size ruler in inches, centimeters, and millimeters",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/concrete-calculator",
+        "text": "Concrete Estimate cubic yards of concrete for a rectangular slab. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/tile-calculator",
+        "text": "Tile Estimate tiles needed for a floor or wall, including waste. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/paint-calculator",
+        "text": "Paint Estimate gallons of wall paint for a rectangular room. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/screen-measurement-tools",
+        "text": "Screen & ruler",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/online-ruler",
+        "text": "Online ruler Calibrate your screen and use a real-size ruler in inches, centimeters, and millimeters",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/screen-ppi-calculator",
+        "text": "Screen PPI Calculate screen pixel density from resolution and diagonal size. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/screen-size-calculator",
+        "text": "Screen dimensions Find screen width from diagonal size and aspect ratio. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/home-project-calculators",
+        "text": "Home projects",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/concrete-calculator",
+        "text": "Concrete Estimate cubic yards of concrete for a rectangular slab. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/gravel-calculator",
+        "text": "Gravel Estimate tons of gravel for a driveway, path, or base layer. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/mulch-calculator",
+        "text": "Mulch Calculate cubic yards of mulch for garden beds. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/tile-calculator",
+        "text": "Tile Estimate tiles needed for a floor or wall, including waste. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/flooring-calculator",
+        "text": "Flooring Estimate square feet of flooring to purchase. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/paint-calculator",
+        "text": "Paint Estimate gallons of wall paint for a rectangular room. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/wallpaper-calculator",
+        "text": "Wallpaper Estimate double rolls of wallpaper for a room. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/decking-calculator",
+        "text": "Decking Estimate linear feet of deck boards for a rectangular deck. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/fence-calculator",
+        "text": "Fence posts Estimate fence posts from total run and spacing. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/categories/measurement-conversion-calculators",
+        "text": "Conversions",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/pixels-to-inches",
+        "text": "Pixels to inches Convert pixels to physical inches using a known PPI. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/area-calculator",
+        "text": "Area Calculate square feet from length and width. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/tools/volume-calculator",
+        "text": "Volume Calculate cubic feet from length, width, and height. \u2192",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/privacy",
+        "text": "Privacy",
+        "rel": []
+      },
+      {
+        "href": "https://measurespark.com/about",
+        "text": "About",
+        "rel": []
+      }
+    ],
+    "external": []
+  },
+  "schema": [],
+  "open_graph": {
+    "og:title": "MeasureSpark",
+    "og:description": "Free, practical measurement tools and home project calculators for everyday jobs.",
+    "og:url": "https://measurespark.com",
+    "og:site_name": "MeasureSpark",
+    "og:type": "website"
+  },
+  "twitter_card": {
+    "twitter:card": "summary",
+    "twitter:title": "MeasureSpark",
+    "twitter:description": "Free, practical measurement tools and home project calculators for everyday jobs."
+  },
+  "word_count": 284,
+  "hreflang": []
+}

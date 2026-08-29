@@ -1,0 +1,150 @@
+{
+  "python": {
+    "ok": true,
+    "version": "3.12.13",
+    "required": "3.10+"
+  },
+  "dependencies": [
+    {
+      "package": "beautifulsoup4",
+      "module": "bs4",
+      "ok": true,
+      "version": "4.15.0"
+    },
+    {
+      "package": "defusedxml",
+      "module": "defusedxml",
+      "ok": true,
+      "version": "0.7.1"
+    },
+    {
+      "package": "google-analytics-data",
+      "module": "google.analytics.data",
+      "ok": true,
+      "version": "0.23.0"
+    },
+    {
+      "package": "google-auth",
+      "module": "google.auth",
+      "ok": true,
+      "version": "2.56.3"
+    },
+    {
+      "package": "google-auth-httplib2",
+      "module": "google_auth_httplib2",
+      "ok": true,
+      "version": null
+    },
+    {
+      "package": "google-auth-oauthlib",
+      "module": "google_auth_oauthlib",
+      "ok": true,
+      "version": null
+    },
+    {
+      "package": "google-api-python-client",
+      "module": "googleapiclient",
+      "ok": true,
+      "version": null
+    },
+    {
+      "package": "lxml",
+      "module": "lxml",
+      "ok": true,
+      "version": "6.1.2"
+    },
+    {
+      "package": "Markdown",
+      "module": "markdown",
+      "ok": true,
+      "version": "3.10.3"
+    },
+    {
+      "package": "matplotlib",
+      "module": "matplotlib",
+      "ok": true,
+      "version": "3.11.1"
+    },
+    {
+      "package": "openpyxl",
+      "module": "openpyxl",
+      "ok": true,
+      "version": "3.1.5"
+    },
+    {
+      "package": "Pillow",
+      "module": "PIL",
+      "ok": true,
+      "version": "12.3.0"
+    },
+    {
+      "package": "requests",
+      "module": "requests",
+      "ok": true,
+      "version": "2.34.2"
+    },
+    {
+      "package": "playwright",
+      "module": "playwright.sync_api",
+      "ok": true,
+      "version": null
+    },
+    {
+      "package": "rapidocr-onnxruntime",
+      "module": "rapidocr_onnxruntime",
+      "ok": true,
+      "version": null
+    },
+    {
+      "package": "validators",
+      "module": "validators",
+      "ok": true,
+      "version": "0.35.0"
+    },
+    {
+      "package": "weasyprint",
+      "module": "weasyprint",
+      "ok": false,
+      "error": "cannot load library 'libgobject-2.0-0': dlopen(libgobject-2.0-0, 0x0002): tried: 'libgobject-2.0-0' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibgobject-2.0-0' (no such file), '/Users/huhl/.codex/skills/seo/.venv/lib/libgobject-2.0-0' (no such file), '/usr/lib/libgobject-2.0-0' (no such file, not in dyld cache), 'libgobject-2.0-0' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libgobject-2.0-0'"
+    }
+  ],
+  "playwright_browser": {
+    "ok": false,
+    "error": "BrowserType.launch: Executable doesn't exist at /Users/huhl/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     playwright install                                     \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
+  },
+  "paths": {
+    "cache": {
+      "ok": true,
+      "path": "/Users/huhl/.codex/skills/seo/.seo-cache"
+    },
+    "output": {
+      "ok": true,
+      "path": "/Users/huhl/.codex/skills/seo/output"
+    }
+  },
+  "target": {
+    "ok": true,
+    "url": "https://measurespark.com/",
+    "status_code": 200
+  },
+  "capabilities": {
+    "core_ready": true,
+    "visual_ready": false,
+    "premium_report_ready": false,
+    "google_api_package_ready": true,
+    "full_ready": false
+  },
+  "missing_required": [],
+  "missing_visual": [],
+  "missing_report": [
+    "weasyprint"
+  ],
+  "missing_google_api": [],
+  "missing_optional": [],
+  "ready": true,
+  "notes": [
+    "Missing premium report packages: weasyprint.",
+    "Playwright Chromium is unavailable, so visual analysis and PDF generation are not fully ready until `playwright install chromium` succeeds.",
+    "Core analysis workflows are ready. Extended visual, PDF, or Google API workflows remain degraded until the listed setup items are fixed."
+  ]
+}
