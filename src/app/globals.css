@@ -229,7 +229,8 @@ nav a:hover { color: var(--ink); }
 .category-explainer p { color: var(--muted); font-size: 1.03rem; }
 
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero { grid-template-columns: minmax(0, 1fr); min-height: auto; }
+  .hero-copy, .measure-board { min-width: 0; max-width: 100%; }
   .measure-board { max-width: 680px; }
   .directory-section { grid-template-columns: 1fr; gap: 24px; }
   .category-tool-list { grid-template-columns: 1fr; gap: 24px; }
