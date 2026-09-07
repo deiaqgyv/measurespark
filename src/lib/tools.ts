@@ -31,6 +31,7 @@ export type ToolDefinition = {
   calculate: (values: Record<string, number>) => number;
   formula: string;
   tips: string[];
+  searchQuestions?: Array<{ question: string; answer: string }>;
   related: string[];
   featured?: boolean;
 };
@@ -95,6 +96,10 @@ export const tools: ToolDefinition[] = [
     calculate: ({ pixels, ppi }) => positive(ppi) ? positive(pixels) / positive(ppi) : 0,
     formula: "Inches = pixels divided by pixels per inch.",
     tips: ["96 PPI is a CSS convention, not every screen's physical density.", "For printing, use the printer or document PPI."],
+    searchQuestions: [
+      { question: "How do I convert pixels to inches at 300 DPI?", answer: "Enter the pixel length and set PPI to 300. Divide pixels by 300; for example, 2400 pixels prints at 8 inches." },
+      { question: "Why do pixel-to-inch results change with PPI?", answer: "Pixels have no fixed physical size. A higher PPI packs the same pixels into fewer inches, while a lower PPI produces a larger physical result." },
+    ],
     related: ["screen-ppi-calculator", "online-ruler", "screen-size-calculator"],
   },
   {
@@ -118,6 +123,10 @@ export const tools: ToolDefinition[] = [
     },
     formula: "Width = diagonal × aspect width divided by the aspect-ratio diagonal.",
     tips: ["This calculates the visible screen, not the outer frame.", "Check the manufacturer's full product dimensions before installation."],
+    searchQuestions: [
+      { question: "Can I calculate TV width from diagonal screen size?", answer: "Yes. Enter the advertised diagonal and aspect ratio to calculate the visible screen width. The bezel and stand are not included." },
+      { question: "Is screen size the same as viewing distance?", answer: "No. This tool calculates physical screen dimensions. Comfortable TV or monitor viewing distance also depends on resolution, eyesight, room layout, and personal preference." },
+    ],
     related: ["screen-ppi-calculator", "online-ruler", "pixels-to-inches"],
   },
   {
@@ -138,6 +147,10 @@ export const tools: ToolDefinition[] = [
     calculate: ({ length, width, depth }) => positive(length) * positive(width) * (positive(depth) / 12) / 27 * 1.1,
     formula: "Length × width × depth, converted to cubic yards, plus 10% allowance.",
     tips: ["Confirm the required slab thickness for your project.", "Suppliers may set a minimum delivery quantity."],
+    searchQuestions: [
+      { question: "How much concrete do I need for a slab?", answer: "Enter slab length and width in feet and depth in inches. The result converts the volume to cubic yards and includes a 10% allowance." },
+      { question: "Does this concrete calculator estimate cost or weight?", answer: "It estimates order volume. Multiply the cubic-yard result by your supplier's current price or material-specific weight because local mixes and delivery charges vary." },
+    ],
     related: ["gravel-calculator", "decking-calculator", "area-calculator"],
     featured: true,
   },
@@ -179,6 +192,10 @@ export const tools: ToolDefinition[] = [
     calculate: ({ length, width, depth }) => positive(length) * positive(width) * (positive(depth) / 12) / 27 * 1.08,
     formula: "Bed volume converted to cubic yards, plus 8% allowance.",
     tips: ["Two to three inches is common for established beds.", "Keep mulch away from trunks and building siding."],
+    searchQuestions: [
+      { question: "How much mulch do I need by square feet?", answer: "Multiply bed length by width for square feet, then apply the selected depth. This calculator converts that volume into cubic yards." },
+      { question: "How many 2 cu ft bags of mulch do I need?", answer: "The detailed result converts the same bed volume into 2 cubic-foot bags and rounds up so you can buy whole bags." },
+    ],
     related: ["gravel-calculator", "area-calculator", "fence-calculator"],
   },
   {
@@ -223,6 +240,10 @@ export const tools: ToolDefinition[] = [
     calculate: (values) => rectangleArea(values) * 1.1,
     formula: "Room area plus 10% cutting allowance.",
     tips: ["Measure alcoves and closets separately, then add them.", "Patterned installations may require a larger allowance."],
+    searchQuestions: [
+      { question: "How do I calculate room square footage for flooring?", answer: "Multiply room length by width, add closets or alcoves, subtract excluded areas, and then apply a cutting-waste percentage." },
+      { question: "How many boxes of flooring should I buy?", answer: "Divide the purchase area, including waste, by the coverage printed on one carton and round up to a whole box." },
+    ],
     related: ["tile-calculator", "paint-calculator", "area-calculator"],
   },
   {
@@ -244,6 +265,10 @@ export const tools: ToolDefinition[] = [
     calculate: ({ length, width, height, coats }) => Math.max(0, ((positive(length) + positive(width)) * 2 * positive(height) - 40) * positive(coats) / 350),
     formula: "Wall area minus 40 ft² for openings, × coats, divided by 350 ft² per gallon.",
     tips: ["Coverage varies by paint, surface texture, and color change.", "Round up to the package size sold by your store."],
+    searchQuestions: [
+      { question: "How much paint do I need for walls and a ceiling?", answer: "Enter the room dimensions, enable the ceiling, subtract doors and windows, and select the number of coats and coverage per gallon." },
+      { question: "Can I calculate ceiling paint from square feet?", answer: "Yes. Ceiling area is room length multiplied by width. The calculator adds that area before applying coats and paint coverage." },
+    ],
     related: ["wallpaper-calculator", "flooring-calculator", "area-calculator"],
     featured: true,
   },

@@ -73,6 +73,22 @@ export function ToolPage({ tool }: { tool: ToolDefinition }) {
         <p>Measure twice and use the same unit throughout. Product coverage, material density, installation patterns, and local requirements can change the quantity you need.</p>
       </section>
       <ProjectGuide slug={tool.slug} />
+      {tool.searchQuestions?.length ? (
+        <section className="method-section" aria-labelledby={`${tool.slug}-questions`}>
+          <div>
+            <h2 id={`${tool.slug}-questions`}>Common questions</h2>
+            <p>Short answers for the measurement details people most often need before using this calculator.</p>
+          </div>
+          <div>
+            {tool.searchQuestions.map(({ question, answer }) => (
+              <div key={question}>
+                <h3>{question}</h3>
+                <p>{answer}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
       <section className="related-section">
         <h2>Related tools</h2>
         <div className="related-links">
