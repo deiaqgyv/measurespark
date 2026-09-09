@@ -243,7 +243,7 @@ nav a:hover { color: var(--ink); }
   .shell { width: min(100% - 32px, var(--shell)); }
   .site-header nav { display: none; }
   .hero { padding-block: 64px 72px; gap: 44px; }
-  .hero h1 { font-size: clamp(3.15rem, 16vw, 4.8rem); }
+  .hero h1 { font-size: clamp(2.8rem, 14vw, 4.8rem); overflow-wrap: anywhere; }
   .privacy-inner, .method-section { grid-template-columns: 1fr; gap: 18px; padding-block: 60px; }
   .guide-sections { grid-template-columns: 1fr; gap: 34px; }
   .guide-sections section:first-child { grid-column: auto; }
