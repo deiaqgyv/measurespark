@@ -20,6 +20,6 @@ export default function PrivacyPage() {
     <h2>Hosting and technical requests</h2><p>Like most websites, the hosting infrastructure receives technical request data needed to deliver and protect the site, such as the requested URL, time, browser information, and network address. MeasureSpark does not use those records as a measurement-history service.</p>
     <h2>Analytics, advertising, and cookies</h2><p>MeasureSpark currently does not include account tracking, an advertising script, or a third-party analytics component in the site application. If one is introduced, this policy will identify the provider, purpose, choices, and relevant retention details.</p>
     <h2>Questions and corrections</h2><p>For privacy questions, email <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>. Do not include sensitive information that is not needed to explain the question.</p>
-    <p>Last updated: August 24, 2026.</p>
+    <p>Last reviewed: September 11, 2026.</p>
   </main>;
 }

@@ -106,6 +106,72 @@ const guides: Record<string, Guide> = {
     ],
     source: { label: "W3C CSS Values definition of absolute lengths", href: "https://www.w3.org/TR/css-values-4/#absolute-lengths" },
   },
+  "screen-size-calculator": {
+    answer: "To find screen width from a diagonal, multiply the diagonal by the aspect-ratio width, then divide by the diagonal of that ratio. A 16:9 screen uses width = diagonal × 16 ÷ √(16² + 9²).",
+    workedExample: "A 55-inch 16:9 screen is about 47.9 inches wide and 27.0 inches high. Those are viewable panel dimensions; the bezel, feet, and wall-mount clearance are separate.",
+    assumptions: ["The diagonal describes the visible rectangular panel.", "The entered aspect ratio matches the displayed content area.", "The result excludes the bezel, stand, cables, and installation clearance."],
+    sections: [
+      { heading: "How do diagonal and aspect ratio determine width?", body: "The aspect ratio describes the relative width and height. Treat those two values as the legs of a right triangle, find the ratio diagonal with the Pythagorean theorem, and scale the width leg to the advertised screen diagonal." },
+      { heading: "Does a 55-inch TV measure 55 inches wide?", body: "No. The advertised size is measured diagonally across the viewable screen. A typical 16:9 55-inch panel is just under 48 inches wide before the frame is added." },
+      { heading: "What should I use for a fit check?", body: "Use the calculated panel size for an early comparison, then use the exact model's published overall width, height, stand footprint, ventilation clearance, and mounting pattern before buying or installing it." },
+    ],
+    source: { label: "W3C Media Queries definition of aspect ratio", href: "https://www.w3.org/TR/mediaqueries-5/#aspect-ratio" },
+  },
+  "wallpaper-calculator": {
+    answer: "Estimate wallpaper by multiplying room perimeter by wall height, allowing for pattern matching and cuts, then dividing by the usable coverage printed for the selected roll. Round up to complete rolls from the same production batch.",
+    workedExample: "A 14 × 12 ft room with 8 ft walls has 416 ft² of gross wall area. Adding 15% gives 478.4 ft²; at 56 usable ft² per double roll, the estimate rounds up to 9 double rolls.",
+    assumptions: ["The room is rectangular and wall height is uniform.", "The estimate uses 56 usable ft² per double roll.", "A 15% allowance represents ordinary matching and cutting, not a large pattern repeat."],
+    sections: [
+      { heading: "Why is usable roll coverage important?", body: "Wallpaper labels can describe total material area, but pattern repeat and trimming reduce the wall area one roll can cover. Use the manufacturer's usable coverage or strip-count instructions whenever they are available." },
+      { heading: "Should doors and windows be subtracted?", body: "For a quick room estimate, leaving typical openings in the gross area provides material for matching and offcuts. A room with unusually large openings can be divided into wall sections, but keep enough full-length strips for the layout." },
+      { heading: "When is a larger allowance needed?", body: "Large repeats, half-drop matches, sloped ceilings, many corners, and damaged strips can increase waste. Confirm the pattern repeat, match type, roll dimensions, and batch number on the actual product label." },
+    ],
+    source: { label: "Wallcoverings Association guide to estimating wallpaper", href: "https://www.wallcoverings.org/page/HowtoEstimate" },
+  },
+  "decking-calculator": {
+    answer: "Estimate deck-board length by dividing the deck width by the installed board module, multiplying the number of rows by deck length, and adding cutting waste. Use the actual board width plus the required gap, not only the nominal lumber name.",
+    workedExample: "A 16 × 12 ft deck using a 5.5-inch installed module needs about 35 board rows. That is roughly 560 linear feet before allowing for cuts and layout waste.",
+    assumptions: ["The deck is rectangular and boards run along its length.", "Board width represents the installed face width and planned spacing.", "The 10% allowance covers routine cuts, not structural framing or a diagonal layout."],
+    sections: [
+      { heading: "What is installed board width?", body: "Nominal lumber dimensions are not the same as finished dimensions. Use the measured face width of the product and include the spacing required by its installation instructions so the row count matches the actual layout." },
+      { heading: "Does the result include framing and fasteners?", body: "No. The result estimates surface board length only. Joists, beams, posts, footings, blocking, stairs, guards, fasteners, and structural connectors need a code-compliant design and separate quantities." },
+      { heading: "When should waste be increased?", body: "Diagonal boards, picture-frame borders, breaker boards, complex edges, and fixed stock lengths can create more offcuts. Sketch the board direction and available lengths before ordering." },
+    ],
+    source: { label: "American Wood Council Prescriptive Residential Wood Deck Construction Guide", href: "https://awc.org/wp-content/uploads/2022/02/AWC-DCA62015-DeckGuide-1804.pdf" },
+  },
+  "fence-calculator": {
+    answer: "Divide each straight fence run by the maximum planned post spacing, round up the number of spaces, and add the final post. Add dedicated posts for gates, corners, ends, and every direction change.",
+    workedExample: "A straight 100 ft run with a maximum 8 ft spacing needs 13 spaces, so it needs 14 posts before adding any extra gate or corner posts.",
+    assumptions: ["The entered length is one continuous straight run.", "Spacing is a maximum center-to-center planning distance.", "Gate, corner, brace, and terminal assemblies are not included."],
+    sections: [
+      { heading: "Why does the calculator round spacing up?", body: "Rounding the number of spaces up keeps the actual spacing at or below your chosen maximum. Dividing 100 feet into 13 spaces, for example, produces spacing of about 7.69 feet rather than exceeding 8 feet." },
+      { heading: "Which posts must be counted separately?", body: "Count both sides of each gate and add posts at corners, ends, slope breaks, and changes in fence direction. Some systems also require braces or line-post assemblies that a simple length calculation cannot identify." },
+      { heading: "What should be checked before digging?", body: "Confirm property boundaries, easements, utility locations, wind exposure, frost depth, permit rules, and the fence manufacturer's post requirements. The quantity result does not determine post size or embedment depth." },
+    ],
+    source: { label: "USDA NRCS Fence conservation practice standard", href: "https://www.nrcs.usda.gov/resources/guides-and-instructions/fence-ft-382-conservation-practice-standard" },
+  },
+  "area-calculator": {
+    answer: "For a rectangle, multiply length by width to get square units. Keep both measurements in the same unit; feet multiplied by feet gives square feet.",
+    workedExample: "A 12 ft by 10 ft rectangle has an area of 120 ft². Two such sections total 240 ft² before adding any project-specific waste allowance.",
+    assumptions: ["The measured shape is rectangular.", "Length and width use the same unit.", "The result is geometric area and does not include material waste."],
+    sections: [
+      { heading: "How do I calculate an irregular room?", body: "Split the outline into non-overlapping rectangles, calculate each area, and add the results. Measure alcoves separately and subtract openings or fixed footprints only when they are outside the project scope." },
+      { heading: "Why are square feet different from feet?", body: "Feet measure one-dimensional length. Square feet measure a surface: each square foot is a square one foot long by one foot wide. The unit is squared because two length dimensions are multiplied." },
+      { heading: "Can square footage determine material quantity?", body: "It provides the base area. Flooring, tile, paint, and landscaping materials also depend on coverage, cuts, coats, depth, package rounding, and installation requirements, so use the relevant project calculator next." },
+    ],
+    source: { label: "NIST guidance for calculating area and volume", href: "https://www.nist.gov/pml/owm/circumference-area-and-volume" },
+  },
+  "volume-calculator": {
+    answer: "For a rectangular space, multiply length by width by height. When all three inputs are in feet, the result is cubic feet.",
+    workedExample: "An 8 × 4 × 2 ft rectangular space has a volume of 64 ft³. Dividing by 27 converts that volume to about 2.37 yd³.",
+    assumptions: ["The object or space is a rectangular prism.", "All three dimensions use the same unit.", "The result is geometric volume without compaction, fill, or waste factors."],
+    sections: [
+      { heading: "What does a cubic foot represent?", body: "One cubic foot is the volume of a cube that measures one foot on every side. Volume has a cubed unit because three perpendicular lengths are multiplied." },
+      { heading: "How do I convert cubic feet to cubic yards?", body: "One yard equals three feet, so one cubic yard contains 3 × 3 × 3, or 27, cubic feet. Divide cubic feet by 27 to get cubic yards." },
+      { heading: "When is this formula not appropriate?", body: "Use a shape-specific formula for cylinders, cones, sloped containers, or irregular excavations. Material orders may also require density, compaction, settling, and waste allowances that are not part of simple geometric volume." },
+    ],
+    source: { label: "NIST SI unit guidance for volume", href: "https://www.nist.gov/pml/owm/si-units-volume" },
+  },
 };
 
 export function ProjectGuide({ slug }: { slug: string }) {
@@ -118,6 +184,6 @@ export function ProjectGuide({ slug }: { slug: string }) {
       <section><h2>Assumptions</h2><ul>{guide.assumptions.map((assumption) => <li key={assumption}>{assumption}</li>)}</ul></section>
       {guide.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
     </div>
-    <p className="source-note">Last reviewed August 24, 2026. Source: <a href={guide.source.href} rel="noreferrer" target="_blank">{guide.source.label}</a>. Product instructions take priority over a general estimate.</p>
+    <p className="source-note">Last reviewed September 11, 2026. Source: <a href={guide.source.href} rel="noreferrer" target="_blank">{guide.source.label}</a>. Product instructions take priority over a general estimate.</p>
   </section>;
 }

@@ -23,6 +23,6 @@ export default function AboutPage() {
     <p>Core calculations run locally in the browser. MeasureSpark does not require an account, upload measurements, or maintain a project-history database. The online ruler can store its calibration only in the browser on the device where it was set.</p>
     <h2 id="contact">Corrections and contact</h2>
     <p>If a formula, source, or explanation needs correction, email <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a> with the page URL, the input values used, the result received, and the result you expected.</p>
-    <p>Last reviewed: August 24, 2026.</p>
+    <p>Last reviewed: September 11, 2026.</p>
   </main>;
 }
