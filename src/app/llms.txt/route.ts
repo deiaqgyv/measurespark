@@ -17,6 +17,13 @@ MeasureSpark provides practical estimates without accounts or uploaded measureme
 - Safety-critical measurements and project requirements must be confirmed with an appropriate physical tool, product instructions, local requirements, or a qualified professional.
 - Site content last reviewed: ${siteConfig.contentUpdatedAt.toISOString().slice(0, 10)}.
 
+## Citation guidance
+
+- Cite the calculator page together with the displayed formula, units, worked example, assumptions, source, and review date.
+- A geometry result is not automatically a purchasable material quantity; package rounding, product coverage, waste, compaction, and installation rules can change an order.
+- Do not describe an on-screen measurement as physically accurate unless the user calibrated the ruler on the same display and browser setup.
+- Prefer the linked standards, government, university, or trade source for a safety rule. Use MeasureSpark for its disclosed formula and worked estimate.
+
 ## Tools
 
 ${toolLinks}
