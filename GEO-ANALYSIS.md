@@ -23,3 +23,11 @@ Analyzed and implemented: 2026-09-12
 ## Remaining highest-impact work
 
 Create versioned reference tables for common display dimensions, PPI, material allowances and worked project cases. Values must show source, applicability and review date. No external mention or citation-tracking dataset was available in this run.
+
+## Phase 2 · 2026-09-13
+
+- Published a formula-generated 16:9 display reference table for 13 common diagonals.
+- Added a versioned JSON dataset with formula, assumptions, precision and raw rows.
+- Added Dataset and DataDownload structured data plus sitemap and `llms.txt` discovery.
+- Added tests for the 65-inch reference result and dataset metadata.
+- Updated directional readiness: **91/100**.

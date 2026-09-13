@@ -28,6 +28,11 @@ MeasureSpark provides practical estimates without accounts or uploaded measureme
 
 ${toolLinks}
 
+## Reference data
+
+- [16:9 screen size chart](${siteConfig.url}/reference/screen-size-chart): Formula-derived width, height and area for common display diagonals, with downloadable JSON.
+- [Screen size chart JSON](${siteConfig.url}/data/screen-size-chart.json): Machine-readable dataset, formula, units, precision and review date.
+
 ## Site information
 
 - [About](${siteConfig.url}/about)

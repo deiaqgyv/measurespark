@@ -215,6 +215,13 @@ nav a:hover { color: var(--ink); }
 .prose-page h1, .empty-page h1 { font-size: clamp(2.8rem, 6vw, 5rem); letter-spacing: -.055em; line-height: 1; }
 .prose-page h2 { margin-top: 48px; }
 .prose-page p { color: var(--muted); font-size: 1.06rem; }
+.reference-page { max-width: 980px; }
+.reference-table-wrap { margin: 32px 0; overflow-x: auto; border: 1px solid var(--border); border-radius: 12px; }
+.reference-table { width: 100%; border-collapse: collapse; background: var(--surface); font-variant-numeric: tabular-nums; }
+.reference-table th, .reference-table td { padding: 12px 14px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; }
+.reference-table th:first-child, .reference-table td:first-child { text-align: left; }
+.reference-table thead { background: var(--surface-soft); }
+.reference-table tbody tr:last-child td { border-bottom: 0; }
 .empty-page p { color: var(--muted); }
 .category-page { padding-bottom: 110px; }
 .category-hero { max-width: 850px; padding-block: 58px 72px; }

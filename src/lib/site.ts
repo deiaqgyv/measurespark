@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://measurespark.com",
   description: "Free, practical measurement tools and home project calculators for everyday jobs.",
   contactEmail: "huhl22550555@163.com",
-  contentUpdatedAt: new Date("2026-09-11T00:00:00.000Z"),
+  contentUpdatedAt: new Date("2026-09-13T00:00:00.000Z"),
 };
 
 export const siteIds = {
