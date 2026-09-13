@@ -31,3 +31,10 @@ Create versioned reference tables for common display dimensions, PPI, material a
 - Added Dataset and DataDownload structured data plus sitemap and `llms.txt` discovery.
 - Added tests for the 65-inch reference result and dataset metadata.
 - Updated directional readiness: **91/100**.
+
+## Phase 3 · 2026-09-13
+
+- Added a second versioned Dataset covering nine common screen-size and resolution combinations.
+- Published formula-derived PPI values in HTML and JSON with assumptions and precision.
+- Added tests for the 27-inch 4K result and machine-readable dataset boundaries.
+- Updated directional readiness: **93/100**.

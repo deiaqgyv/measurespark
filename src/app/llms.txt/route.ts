@@ -32,6 +32,8 @@ ${toolLinks}
 
 - [16:9 screen size chart](${siteConfig.url}/reference/screen-size-chart): Formula-derived width, height and area for common display diagonals, with downloadable JSON.
 - [Screen size chart JSON](${siteConfig.url}/data/screen-size-chart.json): Machine-readable dataset, formula, units, precision and review date.
+- [Screen PPI chart](${siteConfig.url}/reference/ppi-chart): Formula-derived pixel density for common display sizes and resolutions.
+- [Screen PPI JSON](${siteConfig.url}/data/ppi-reference.json): Machine-readable resolution, diagonal, PPI, assumptions and precision.
 
 ## Site information
 

@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryDefinitions.map((category) => ({ url: `${siteConfig.url}/categories/${category.slug}`, lastModified: siteConfig.contentUpdatedAt })),
     ...tools.map((tool) => ({ url: `${siteConfig.url}/tools/${tool.slug}`, lastModified: siteConfig.contentUpdatedAt })),
     { url: `${siteConfig.url}/reference/screen-size-chart`, lastModified: siteConfig.contentUpdatedAt },
+    { url: `${siteConfig.url}/reference/ppi-chart`, lastModified: siteConfig.contentUpdatedAt },
     { url: `${siteConfig.url}/about`, lastModified: siteConfig.contentUpdatedAt },
     { url: `${siteConfig.url}/privacy`, lastModified: siteConfig.contentUpdatedAt },
   ];
