@@ -34,6 +34,8 @@ ${toolLinks}
 - [Screen size chart JSON](${siteConfig.url}/data/screen-size-chart.json): Machine-readable dataset, formula, units, precision and review date.
 - [Screen PPI chart](${siteConfig.url}/reference/ppi-chart): Formula-derived pixel density for common display sizes and resolutions.
 - [Screen PPI JSON](${siteConfig.url}/data/ppi-reference.json): Machine-readable resolution, diagonal, PPI, assumptions and precision.
+- [Exact unit conversion table](${siteConfig.url}/reference/unit-conversion-table): Exact length, area and volume factors with SI base units and usage limitations.
+- [Unit conversion JSON](${siteConfig.url}/data/unit-conversions.json): Machine-readable versioned conversion factors and definitions.
 
 ## Site information
 

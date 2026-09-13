@@ -38,3 +38,10 @@ Create versioned reference tables for common display dimensions, PPI, material a
 - Published formula-derived PPI values in HTML and JSON with assumptions and precision.
 - Added tests for the 27-inch 4K result and machine-readable dataset boundaries.
 - Updated directional readiness: **93/100**.
+
+## Phase 4 · 2026-09-13
+
+- Added a versioned exact-conversion dataset for common length, area and volume units.
+- Published human-readable definitions and downloadable JSON with Dataset/DataDownload structured data.
+- Explicitly distinguishes US liquid gallons from imperial gallons and preserves full factors before display rounding.
+- Updated directional readiness: **95/100**. Source-qualified material allowance datasets remain the next useful expansion.
