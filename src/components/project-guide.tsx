@@ -48,8 +48,9 @@ const guides: Record<string, Guide> = {
       { heading: "How is slab volume calculated?", body: "Convert depth from inches to feet, multiply it by slab length and width, then divide cubic feet by 27. The displayed quantity includes the ordering allowance; it does not calculate reinforcement, subbase, forms, or structural capacity." },
       { heading: "Where can the estimate be wrong?", body: "An unlevel excavation, thickened edges, footings, ramps, steps, or material left in the chute can increase volume. Measure distinct shapes separately and ask the ready-mix supplier how it handles order increments and short loads." },
       { heading: "What should be confirmed before ordering?", body: "Confirm slab thickness, mix specification, reinforcement, joints, drainage, permits, and site access with the plans or a qualified local professional. A volume result is not a structural design." },
+      { heading: "How many bags is that?", body: "An 80 lb bag of QUIKRETE Concrete Mix is published at about 0.60 cubic feet mixed. A 12 × 10 ft slab 4 inches thick is 40 ft³; applying the calculator's 10% default and rounding up is 74 bags of that mix. Confirm the actual bag yield on the product data sheet." },
     ],
-    source: { label: "National Ready Mixed Concrete Association concrete resources", href: "https://www.nrmca.org/association-resources/" },
+    source: { label: "QUIKRETE Concrete Mix No. 1101 data sheet", href: "https://www.quikrete.com/pdfs/data_sheet-concrete%20mix%201101.pdf" },
   },
   "gravel-calculator": {
     answer: "Estimate gravel by finding compacted volume in cubic yards, multiplying by the supplier's tons-per-yard figure, and adding an allowance. The built-in estimate uses 1.4 tons per cubic yard and 10% extra.",

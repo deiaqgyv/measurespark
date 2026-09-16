@@ -26,7 +26,8 @@ Updated: 2026-09-11
 ### Medium priority: product depth
 
 - [ ] Add wallpaper roll dimensions and pattern-repeat inputs if wallpaper impressions justify the work.
-- [ ] Add concrete bag-count options if bag-related queries appear in Search Console.
+- [x] Publish source-qualified material yields and calculator-default allowances, including QUIKRETE bag yields for 40/60/80 lb mix.
+- [ ] Add a live bag-count input on the concrete tool if Search Console shows bag-intent queries after this dataset ships.
 - [ ] Add decking stock-length and fence gate/corner controls only when they improve a proven user job.
 - [ ] Add metric units as a deliberate localization/product project, not as thin duplicated pages.
 

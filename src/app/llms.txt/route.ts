@@ -36,6 +36,8 @@ ${toolLinks}
 - [Screen PPI JSON](${siteConfig.url}/data/ppi-reference.json): Machine-readable resolution, diagonal, PPI, assumptions and precision.
 - [Exact unit conversion table](${siteConfig.url}/reference/unit-conversion-table): Exact length, area and volume factors with SI base units and usage limitations.
 - [Unit conversion JSON](${siteConfig.url}/data/unit-conversions.json): Machine-readable versioned conversion factors and definitions.
+- [Material yields and allowances](${siteConfig.url}/reference/material-allowances): Manufacturer bag yields, paint coverage, owner extra stock and calculator waste defaults, each labeled by kind.
+- [Material allowance JSON](${siteConfig.url}/data/material-allowances.json): Machine-readable yields, sources, applicability and limitations.
 
 ## Site information
 

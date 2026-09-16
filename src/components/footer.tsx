@@ -9,6 +9,7 @@ export function Footer() {
           <p>Practical measurements for everyday projects.</p>
         </div>
         <div className="footer-links">
+          <Link href="/reference/material-allowances">Material data</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/about">About</Link>
         </div>
