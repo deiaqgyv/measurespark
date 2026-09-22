@@ -43,7 +43,7 @@ export default function Home() {
       </section>
       <section className="shell home-explainer">
         <h2>How MeasureSpark helps with everyday projects</h2>
-        <p>Use the online ruler for a quick physical check on a calibrated screen, or choose a material calculator when you are planning a store run. Paint, flooring, and tile tools turn room dimensions into whole-package purchase estimates and show the assumptions behind the result.</p>
+        <p>Use the online ruler for a quick physical check on a calibrated screen, the screen size calculator for TV and monitor fit, or a material calculator when you are planning a store run. Mulch, flooring, and paint tools turn measurements into bag, box, or gallon estimates and show the assumptions behind the result.</p>
         <p>Every core calculation runs locally in your browser. Start with the supplied defaults, replace them with measurements from your room or product label, and confirm the final quantity against manufacturer instructions before buying.</p>
       </section>
       <section className="privacy-band">

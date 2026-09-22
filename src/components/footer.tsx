@@ -9,6 +9,9 @@ export function Footer() {
           <p>Practical measurements for everyday projects.</p>
         </div>
         <div className="footer-links">
+          <Link href="/tools/online-ruler">Online ruler</Link>
+          <Link href="/tools/mulch-calculator">Mulch</Link>
+          <Link href="/tools/screen-size-calculator">Screen size</Link>
           <Link href="/reference/material-allowances">Material data</Link>
           <Link href="/privacy">Privacy</Link>
           <Link href="/about">About</Link>

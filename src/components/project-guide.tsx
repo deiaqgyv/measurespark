@@ -26,6 +26,7 @@ const guides: Record<string, Guide> = {
       { heading: "How many boxes of flooring do I need?", body: "Measure each rectangular area and add the square footage. Enter the coverage listed on the carton, not the dimensions of one plank. The calculator adds your chosen waste percentage and rounds the result up because retailers sell full cartons." },
       { heading: "How much extra flooring should I order?", body: "Ten percent is a practical starting point for a straightforward installation in a rectangular room. Diagonal layouts, herringbone, many doorways, irregular walls, and boards with visible defects can need more. The cutting allowance is editable so you can match the installation plan rather than accepting a fixed guess." },
       { heading: "What should I measure separately?", body: "Add closets, bay areas, and connected spaces that use the same material. Subtract fixed islands, cabinets, or other areas only when flooring will definitely not run beneath them. Keep an unopened spare carton when possible because matching the same color batch later can be difficult." },
+      { heading: "Is this a contractor takeoff or inventory tool?", body: "No. MeasureSpark estimates a rectangular room, an editable waste percentage, whole boxes from the carton coverage you enter, and optional material cost. It does not import CAD plans, manufacturer SKU catalogs, or job-costing databases. If you arrived from a branded takeoff search, use this page for the shopping quantity and keep the plan software for layout." },
     ],
     source: { label: "National Wood Flooring Association consumer resources", href: "https://woodfloors.org/" },
   },
@@ -71,6 +72,7 @@ const guides: Record<string, Guide> = {
       { heading: "How deep should mulch be?", body: "Depth depends on mulch type, soil, weeds, and what is already present. Extension guidance commonly recommends a moderate layer rather than piling material against plants; measure the current layer and follow local horticultural advice." },
       { heading: "How many bags of mulch do I need?", body: "One cubic yard equals 27 cubic feet. Divide the total cubic feet by the volume printed on one bag and round up. The result panel shows 2 cu ft bags automatically; for another bag size, divide the displayed cubic feet by that package size." },
       { heading: "Where should mulch not be placed?", body: "Keep mulch pulled back from tree trunks, plant crowns, siding, and other moisture-sensitive surfaces. The calculator estimates volume only and cannot evaluate plant health or building clearance." },
+      { heading: "How should irregular beds be measured?", body: "Split curves into rectangles, calculate each volume, then add them. A kidney-shaped bed is usually two or three rectangles plus a leftover strip. Do not use the longest length times the widest width as if the bed were a solid rectangle unless the empty corners will also be mulched." },
     ],
     source: { label: "University of Minnesota Extension guidance on mulching", href: "https://extension.umn.edu/planting-and-growing-guides/mulching-landscape-trees" },
   },
@@ -82,6 +84,7 @@ const guides: Record<string, Guide> = {
       { heading: "Why is calibration necessary?", body: "CSS pixels are a display convention, not a guaranteed physical size. Screen pixel density, operating-system scaling, browser zoom, and external monitors can all change the apparent ruler." },
       { heading: "How does card calibration work?", body: "The tool stores a scale factor after you resize the guide to the width of a standard ID-1 card. That factor converts screen pixels to inches or millimeters for this browser and display setup." },
       { heading: "When should a physical ruler be used?", body: "Use a traceable physical measuring tool for fabrication tolerances, medicine, safety checks, legal dimensions, or any decision where a screen mismatch could cause harm or cost." },
+      { heading: "Can I calibrate with A4 paper instead of a card?", body: "Yes. An A4 short edge is 210 mm. Align that edge to the on-screen guide if you do not have an ID-1 card. Recalibrate after changing zoom, display, or browser window." },
     ],
     source: { label: "ISO/IEC 7810 identification card dimensions", href: "https://www.iso.org/standard/70483.html" },
   },
@@ -115,6 +118,7 @@ const guides: Record<string, Guide> = {
       { heading: "How do diagonal and aspect ratio determine width?", body: "The aspect ratio describes the relative width and height. Treat those two values as the legs of a right triangle, find the ratio diagonal with the Pythagorean theorem, and scale the width leg to the advertised screen diagonal." },
       { heading: "Does a 55-inch TV measure 55 inches wide?", body: "No. The advertised size is measured diagonally across the viewable screen. A typical 16:9 55-inch panel is just under 48 inches wide before the frame is added." },
       { heading: "What should I use for a fit check?", body: "Use the calculated panel size for an early comparison, then use the exact model's published overall width, height, stand footprint, ventilation clearance, and mounting pattern before buying or installing it." },
+      { heading: "Where are common 16:9 sizes listed?", body: "The screen size chart lists formula-derived width and height for diagonals from 13.3 to 98 inches at 16:9. Use it to compare a 24-inch monitor with a 55-inch TV before checking the product sheet for the chassis." },
     ],
     source: { label: "W3C Media Queries definition of aspect ratio", href: "https://www.w3.org/TR/mediaqueries-5/#aspect-ratio" },
   },
@@ -170,6 +174,7 @@ const guides: Record<string, Guide> = {
       { heading: "What does a cubic foot represent?", body: "One cubic foot is the volume of a cube that measures one foot on every side. Volume has a cubed unit because three perpendicular lengths are multiplied." },
       { heading: "How do I convert cubic feet to cubic yards?", body: "One yard equals three feet, so one cubic yard contains 3 × 3 × 3, or 27, cubic feet. Divide cubic feet by 27 to get cubic yards." },
       { heading: "When is this formula not appropriate?", body: "Use a shape-specific formula for cylinders, cones, sloped containers, or irregular excavations. Material orders may also require density, compaction, settling, and waste allowances that are not part of simple geometric volume." },
+      { heading: "How do I go from box volume to mulch bags?", body: "If the rectangle is a soil or mulch bed, convert cubic feet to yards here, then open the mulch calculator to apply depth, an 8% settling allowance, and 2 cu ft bag rounding. Do not treat geometric volume as a store quantity by itself." },
     ],
     source: { label: "NIST SI unit guidance for volume", href: "https://www.nist.gov/pml/owm/si-units-volume" },
   },
@@ -185,6 +190,6 @@ export function ProjectGuide({ slug }: { slug: string }) {
       <section><h2>Assumptions</h2><ul>{guide.assumptions.map((assumption) => <li key={assumption}>{assumption}</li>)}</ul></section>
       {guide.sections.map((section) => <section key={section.heading}><h2>{section.heading}</h2><p>{section.body}</p></section>)}
     </div>
-    <p className="source-note">Last reviewed September 11, 2026. Source: <a href={guide.source.href} rel="noreferrer" target="_blank">{guide.source.label}</a>. Product instructions take priority over a general estimate.</p>
+    <p className="source-note">Last reviewed September 22, 2026. Source: <a href={guide.source.href} rel="noreferrer" target="_blank">{guide.source.label}</a>. Product instructions take priority over a general estimate.</p>
   </section>;
 }

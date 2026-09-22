@@ -45,17 +45,21 @@ export const tools: ToolDefinition[] = [
   {
     slug: "online-ruler",
     name: "Actual Size Online Ruler",
-    seoTitle: "Actual Size Online Ruler in Inches, CM & MM",
+    seoTitle: "Online Ruler — Actual Size in Inches, CM & MM",
     shortName: "Online ruler",
     category: "Screen & ruler",
-    description: "Calibrate your screen and use a real-size ruler in inches, centimeters, and millimeters.",
-    intro: "Place an object at zero, then tap or drag the marker to read its length. Calibrate only when you need better physical accuracy.",
+    description: "Calibrate your screen and use a real-size online ruler in inches, centimeters, and millimeters.",
+    intro: "Place an object at zero, then tap or drag the marker to read its length. Calibrate with a bank card or A4 short edge when you need better physical accuracy.",
     fields: [],
     resultLabel: "Calibration",
     resultUnit: "pixels per inch",
     calculate: () => 96,
     formula: "A bank card is 85.60 mm wide. The matched pixel width determines your screen scale.",
     tips: ["Keep browser zoom at 100%.", "Recalibrate after moving the window to another display.", "Use a physical ruler for safety-critical measurements."],
+    searchQuestions: [
+      { question: "How do I calibrate an online ruler?", answer: "Keep browser zoom at 100%, resize the on-screen guide to a real ID-1 bank card (85.60 mm) or the 210 mm short edge of A4 paper, then measure on the same display." },
+      { question: "Is an online ruler accurate without calibration?", answer: "No. CSS pixels are not a guaranteed physical size. Uncalibrated readings can be off after OS scaling, zoom, or moving the window to another monitor." },
+    ],
     related: ["screen-ppi-calculator", "pixels-to-inches", "screen-size-calculator"],
     featured: true,
   },
@@ -82,7 +86,7 @@ export const tools: ToolDefinition[] = [
   {
     slug: "pixels-to-inches",
     name: "Pixels to Inches Calculator",
-    seoTitle: "Convert Pixels to Inches — Calculator with Custom PPI",
+    seoTitle: "Pixels to Inches Converter — Custom PPI / DPI",
     shortName: "Pixels to inches",
     category: "Conversions",
     description: "Convert pixels to physical inches with a custom PPI or DPI value, including screen and print-size examples.",
@@ -99,6 +103,7 @@ export const tools: ToolDefinition[] = [
     searchQuestions: [
       { question: "How do I convert pixels to inches at 300 DPI?", answer: "Enter the pixel length and set PPI to 300. Divide pixels by 300; for example, 2400 pixels prints at 8 inches." },
       { question: "Why do pixel-to-inch results change with PPI?", answer: "Pixels have no fixed physical size. A higher PPI packs the same pixels into fewer inches, while a lower PPI produces a larger physical result." },
+      { question: "How wide is 1920 pixels?", answer: "At 96 PPI it is 20 inches. At 300 PPI it is 6.4 inches. Always enter the density of the display or print workflow, not a guessed convention." },
     ],
     related: ["screen-ppi-calculator", "online-ruler", "screen-size-calculator"],
   },
@@ -126,8 +131,10 @@ export const tools: ToolDefinition[] = [
     searchQuestions: [
       { question: "Can I calculate TV width from diagonal screen size?", answer: "Yes. Enter the advertised diagonal and aspect ratio to calculate the visible screen width. The bezel and stand are not included." },
       { question: "Is screen size the same as viewing distance?", answer: "No. This tool calculates physical screen dimensions. Comfortable TV or monitor viewing distance also depends on resolution, eyesight, room layout, and personal preference." },
+      { question: "How wide is a 55-inch 16:9 TV?", answer: "The visible panel is about 47.9 inches wide and 27.0 inches high. The bezel, stand, and wall-mount clearance are extra. See the 16:9 chart for other common diagonals." },
     ],
     related: ["screen-ppi-calculator", "online-ruler", "pixels-to-inches"],
+    featured: true,
   },
   {
     slug: "concrete-calculator",
@@ -152,7 +159,6 @@ export const tools: ToolDefinition[] = [
       { question: "Does this concrete calculator estimate cost or weight?", answer: "It estimates order volume. Multiply the cubic-yard result by your supplier's current price or material-specific weight because local mixes and delivery charges vary." },
     ],
     related: ["gravel-calculator", "decking-calculator", "area-calculator"],
-    featured: true,
   },
   {
     slug: "gravel-calculator",
@@ -195,8 +201,10 @@ export const tools: ToolDefinition[] = [
     searchQuestions: [
       { question: "How much mulch do I need by square feet?", answer: "Multiply bed length by width for square feet, then apply the selected depth. This calculator converts that volume into cubic yards." },
       { question: "How many 2 cu ft bags of mulch do I need?", answer: "The detailed result converts the same bed volume into 2 cubic-foot bags and rounds up so you can buy whole bags." },
+      { question: "How much mulch do I need for 2 inches vs 3 inches?", answer: "At 100 ft², 2 inches is about 16.7 ft³ (9 bags of 2 cu ft after the 8% allowance); 3 inches is about 25 ft³ (14 bags). Irregular beds should be split into rectangles first." },
     ],
-    related: ["gravel-calculator", "area-calculator", "fence-calculator"],
+    related: ["volume-calculator", "gravel-calculator", "area-calculator"],
+    featured: true,
   },
   {
     slug: "tile-calculator",
@@ -221,7 +229,6 @@ export const tools: ToolDefinition[] = [
     formula: "Surface area divided by tile area, plus 10% waste, rounded up.",
     tips: ["Complex layouts and diagonal patterns need more waste.", "Buy boxes from the same dye lot when appearance matters."],
     related: ["flooring-calculator", "paint-calculator", "area-calculator"],
-    featured: true,
   },
   {
     slug: "flooring-calculator",
@@ -243,8 +250,10 @@ export const tools: ToolDefinition[] = [
     searchQuestions: [
       { question: "How do I calculate room square footage for flooring?", answer: "Multiply room length by width, add closets or alcoves, subtract excluded areas, and then apply a cutting-waste percentage." },
       { question: "How many boxes of flooring should I buy?", answer: "Divide the purchase area, including waste, by the coverage printed on one carton and round up to a whole box." },
+      { question: "How is this different from a contractor takeoff tool?", answer: "This page estimates room area, waste, whole boxes, and optional cost in the browser. It does not import floor plans, SKUs, or job costing. Enter carton coverage from the label you will actually buy." },
     ],
     related: ["tile-calculator", "paint-calculator", "area-calculator"],
+    featured: true,
   },
   {
     slug: "paint-calculator",
@@ -270,7 +279,6 @@ export const tools: ToolDefinition[] = [
       { question: "Can I calculate ceiling paint from square feet?", answer: "Yes. Ceiling area is room length multiplied by width. The calculator adds that area before applying coats and paint coverage." },
     ],
     related: ["wallpaper-calculator", "flooring-calculator", "area-calculator"],
-    featured: true,
   },
   {
     slug: "wallpaper-calculator",
@@ -353,11 +361,11 @@ export const tools: ToolDefinition[] = [
   {
     slug: "volume-calculator",
     name: "Rectangular Volume Calculator",
-    seoTitle: "Cubic Feet Calculator: Length × Width × Height",
+    seoTitle: "Volume of a Box Calculator — Cubic Feet and Yards",
     shortName: "Volume",
     category: "Conversions",
-    description: "Calculate cubic feet from length, width, and height.",
-    intro: "Use this for boxes, rooms, soil beds, storage spaces, and other rectangular volumes.",
+    description: "Calculate cubic feet and cubic yards from length, width, and height for boxes, rooms, and soil beds.",
+    intro: "Use this for boxes, rooms, soil beds, storage spaces, and other rectangular volumes. Divide cubic feet by 27 for cubic yards.",
     fields: [
       { key: "length", label: "Length", unit: "ft", defaultValue: 8, min: 0, step: 0.1 },
       { key: "width", label: "Width", unit: "ft", defaultValue: 4, min: 0, step: 0.1 },
@@ -368,7 +376,12 @@ export const tools: ToolDefinition[] = [
     calculate: ({ length, width, height }) => positive(length) * positive(width) * positive(height),
     formula: "Volume = length × width × height.",
     tips: ["Keep all dimensions in the same unit.", "Containers with sloped sides need a shape-specific formula."],
-    related: ["area-calculator", "concrete-calculator", "mulch-calculator"],
+    searchQuestions: [
+      { question: "How do I calculate the volume of a rectangular box?", answer: "Multiply length × width × height in the same unit. With feet, the result is cubic feet. Divide by 27 for cubic yards." },
+      { question: "How much soil or mulch is that in cubic yards?", answer: "Convert the geometric cubic feet to yards, then use the mulch calculator if you also need bag count and a settling allowance. This page does not add waste or compaction." },
+    ],
+    related: ["mulch-calculator", "area-calculator", "concrete-calculator"],
+    featured: true,
   },
 ];
 

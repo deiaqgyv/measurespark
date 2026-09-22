@@ -21,13 +21,13 @@ const categoryGuides: Record<string, { heading: string; paragraphs: string[]; li
   "home-project-calculators": {
     heading: "Turn room measurements into a shopping estimate",
     paragraphs: [
-      "Choose the calculator for the material you will actually purchase. Paint depends on coats and coverage per gallon; flooring and tile depend on package coverage and whole-box rounding; concrete, gravel, and mulch depend on depth as well as surface area.",
+      "Choose the calculator for the material you will actually purchase. Mulch depends on bed area and depth, then rounds to 2 cu ft bags. Paint depends on coats and coverage per gallon; flooring and tile depend on package coverage and whole-box rounding; concrete and gravel depend on depth as well as surface area.",
       "Measure separate rectangles, add or subtract areas deliberately, and replace every default with the value on the product label or supplier quote. Waste allowances are planning inputs, not universal rules: patterns, uneven bases, stock lengths, and installation methods can change them.",
     ],
     links: [
-      { slug: "paint-calculator", label: "Paint calculator", use: "Estimate walls, openings, coats, ceiling paint, and whole gallons." },
+      { slug: "mulch-calculator", label: "Mulch calculator", use: "Convert bed area and depth into cubic yards and 2 cu ft bags." },
       { slug: "flooring-calculator", label: "Flooring calculator", use: "Convert room area and cutting allowance into whole boxes and cost." },
-      { slug: "concrete-calculator", label: "Concrete calculator", use: "Convert slab dimensions and depth into cubic yards." },
+      { slug: "paint-calculator", label: "Paint calculator", use: "Estimate walls, openings, coats, ceiling paint, and whole gallons." },
     ],
   },
   "measurement-conversion-calculators": {
